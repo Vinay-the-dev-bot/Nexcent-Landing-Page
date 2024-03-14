@@ -1,6 +1,6 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import illustration from "../assets/HeroIllustration.png";
-import { green } from "../App";
+import { gray, green } from "../App";
 function HeroSection() {
   return (
     <Box
@@ -17,7 +17,6 @@ function HeroSection() {
 
       <Box width={"40%"} display={"flex"} gap={"5px"} flexDirection={"column"}>
         <Text
-          fontFamily={"Inter"}
           fontSize={"50px"}
           fontWeight={600}
           lineHeight={"76px"}
@@ -25,7 +24,7 @@ function HeroSection() {
         >
           Lessons and insights <span>from 8 years</span>
         </Text>
-        <Text fontSize={"16px"}>
+        <Text color={gray} fontSize={"16px"}>
           Where to grow your business as a photographer: site or social media?
         </Text>
         <Button
