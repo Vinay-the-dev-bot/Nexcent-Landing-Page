@@ -9,7 +9,7 @@ import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
 import NavBar from "./Components/NavBar";
 import Unlock from "./Components/Unlock";
-
+export let green = "#4CAF4F";
 function App() {
   return (
     <>

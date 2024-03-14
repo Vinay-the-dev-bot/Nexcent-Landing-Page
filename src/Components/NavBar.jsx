@@ -1,8 +1,14 @@
 import { Box, Button, UnorderedList } from "@chakra-ui/react";
 import logo from "../assets/Logo.png";
+import { green } from "../App";
 function NavBar() {
   return (
-    <Box display={"flex"} justifyContent={"space-between"} padding={"20px 0"}>
+    <Box
+      backgroundColor={"#F5F7FA"}
+      display={"flex"}
+      justifyContent={"space-between"}
+      padding={"20px 5%"}
+    >
       <Box>
         <img src={logo} />
       </Box>
@@ -21,8 +27,22 @@ function NavBar() {
         </UnorderedList>
       </Box>
       <Box display={"flex"} gap={"20px"}>
-        <Button width={"80px"}>Login</Button>
-        <Button>Sign Up</Button>
+        <Button
+          width={"80px"}
+          bg={"transparent"}
+          _hover={{ bg: "transparent" }}
+          color={green}
+        >
+          Login
+        </Button>
+        <Button
+          width={"80px"}
+          _hover={{ bg: green, opacity: ".75" }}
+          color={"white"}
+          bg={green}
+        >
+          Sign Up
+        </Button>
       </Box>
     </Box>
   );
