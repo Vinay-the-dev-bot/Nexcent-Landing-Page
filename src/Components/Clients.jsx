@@ -6,6 +6,7 @@ import logo4 from "../assets/clientLogo4.png";
 import logo5 from "../assets/clientLogo5.png";
 import logo6 from "../assets/clientLogo6.png";
 import logo7 from "../assets/clientLogo7.png";
+import { gray } from "../App";
 function Clients() {
   return (
     <Box
@@ -19,7 +20,9 @@ function Clients() {
     >
       <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
         <Text fontSize={"50px"}>Our Clients</Text>
-        <Text>We have been working with some Fortune 500+ clients</Text>
+        <Text color={gray}>
+          We have been working with some Fortune 500+ clients
+        </Text>
       </Box>
       <Box
         width={"100%"}
