@@ -38,7 +38,7 @@ function HeroSection() {
         </Button>
       </Box>
       <Box width={"40%"}>
-        <img src={illustration} />
+        <img src={illustration} alt="illustration" />
       </Box>
     </Box>
   );
