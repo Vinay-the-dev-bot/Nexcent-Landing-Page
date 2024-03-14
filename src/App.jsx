@@ -1,3 +1,4 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import Achievements from "./Components/Achievements";
 import Calendar from "./Components/Calendar";
 import Clients from "./Components/Clients";
@@ -12,16 +13,18 @@ import Unlock from "./Components/Unlock";
 function App() {
   return (
     <>
-      <NavBar />
-      <HeroSection />
-      <Clients />
-      <Community />
-      <Unlock />
-      <Achievements />
-      <Calendar />
-      <Customers />
-      <CommunityUpdates />
-      <Footer />
+      <ChakraProvider>
+        <NavBar />
+        <HeroSection />
+        <Clients />
+        <Community />
+        <Unlock />
+        <Achievements />
+        <Calendar />
+        <Customers />
+        <CommunityUpdates />
+        <Footer />
+      </ChakraProvider>
     </>
   );
 }
