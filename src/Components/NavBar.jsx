@@ -10,7 +10,7 @@ function NavBar() {
       padding={"20px 5%"}
     >
       <Box>
-        <img src={logo} />
+        <img src={logo} alt="logo" />
       </Box>
       <Box width={"50%"}>
         <UnorderedList
