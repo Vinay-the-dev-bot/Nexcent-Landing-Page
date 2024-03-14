@@ -3,12 +3,7 @@ import unlock from "../assets/unlock.png";
 import { gray, green } from "../App";
 function Unlock() {
   return (
-    <Box
-      backgroundColor={"#F5F7FA"}
-      display={"flex"}
-      padding={"0 5%"}
-      alignItems={"center"}
-    >
+    <Box display={"flex"} padding={"0 5%"} alignItems={"center"}>
       <Box width={"40%"}>
         <img src={unlock} alt="unlock" />
       </Box>
